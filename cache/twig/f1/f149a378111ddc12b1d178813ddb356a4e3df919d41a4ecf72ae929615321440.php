@@ -43,7 +43,7 @@ class __TwigTemplate_e2bdc00677b10ffc59c03d3bc3c426445630dce3fe0678ec8410ed8def0
             <div><a href=\"/home/\">Actions commerciales</a></div>
         </div>
         <div>
-            <div><a href=\"/home/#saesat\">SAESAT</a></div>
+            <div><a href=\"/#saesat\">SAESAT</a></div>
             <div><a href=\"/home/#autrement\">Autrement</a></div>
             <div><a href=\"/home/#partenaires\">Partenaires</a></div>
             <div><a href=\"/home/#contact\">Contact - Infos</a></div>
@@ -102,13 +102,13 @@ class __TwigTemplate_e2bdc00677b10ffc59c03d3bc3c426445630dce3fe0678ec8410ed8def0
             <div><a href=\"/home/\">Actions commerciales</a></div>
         </div>
         <div>
-            <div><a href=\"/home/#saesat\">SAESAT</a></div>
+            <div><a href=\"/#saesat\">SAESAT</a></div>
             <div><a href=\"/home/#autrement\">Autrement</a></div>
             <div><a href=\"/home/#partenaires\">Partenaires</a></div>
             <div><a href=\"/home/#contact\">Contact - Infos</a></div>
         </div>
     </div>
 {% endif %}
-", "partials/navigation.html.twig", "/Users/dev/Downloads/grav-admin/user/themes/ak/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/Users/dev/Boulot/Context/Ateliers Kennedy/ateliers-kennedy/user/themes/ak/templates/partials/navigation.html.twig");
     }
 }
