@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+
+.home {
+
+    article {
+        padding: 4rem 0 3.5rem;
+        text-align: center;
+
+        .wrapper {
+            max-width: 73.4rem;
+        }
+
+        p {
+            margin: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.blue {
+
+            .read-more {
+                color: #fff;
+                border-color: #fff;
+                opacity: 1;
+
+                &:hover {
+                    opacity: .65;
+                }
+            }
+
+            h2 {
+                border-color: #fff;
+            }
+
+            a {
+                color: white;
+                opacity: .65;
+
+                &:hover {
+                  opacity: 1;
+                }
+            }
+        }
+
+        article {
+          padding-top: 0;
+          padding-bottom: 3rem;
+
+          &:nth-child(-n+3) {
+            padding-top: 3rem;
+          }
+          &:nth-last-child(-n+3) {
+            padding-bottom: 0;
+          }
+        }
+    }
+
+    .atelier {
+        .wrapper {
+            max-width: 1120px;
+        }
+    }
+}
+
+.slick-slide {
+
+    a {
+        opacity: 1;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.slick-dots li {
+
+    &:before,
+    &:after {
+        display: none;
+    }
+}
+
+.intro {
+    align-items: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 2.5rem;
+
+    div {
+
+        &:nth-child(2) {
+            text-align: center;
+
+            span {
+                display: inline-block;
+                max-width: 34rem;
+            }
+        }
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    img {
+        max-width: 7rem;
+        height: auto;
+
+        & + a {
+            margin-left: 4rem;
+            opacity: 1;
+        }
+    }
+
+}
+
+@media screen and (max-width:$desktop-width) {
+    .slick-slider.wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .intro {
+        flex-direction: column;
+
+        div {
+            min-width: 100%;
+            text-align: center;
+
+            &:last-child {
+                text-align: center;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}

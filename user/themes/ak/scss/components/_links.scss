@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+a {
+    color: $default-blue;
+    text-decoration: none;
+    opacity: .65;
+    transition: opacity 0.1s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}

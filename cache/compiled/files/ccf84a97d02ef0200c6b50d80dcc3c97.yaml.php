@@ -1,0 +1,40 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/Users/dev/Downloads/grav-admin/user/themes/ak/blueprints.yaml',
+    'modified' => 1519058871,
+    'data' => [
+        'name' => 'Ak',
+        'version' => '0.1.0',
+        'description' => 'AK\'s theme',
+        'icon' => 'rebel',
+        'author' => [
+            'name' => 'newick',
+            'email' => 'erick@entre-quote.com'
+        ],
+        'homepage' => 'https://github.com/newick/grav-theme-ak',
+        'demo' => 'http://demo.yoursite.com',
+        'keywords' => 'grav, theme, etc',
+        'bugs' => 'https://github.com/newick/grav-theme-ak/issues',
+        'readme' => 'https://github.com/newick/grav-theme-ak/blob/develop/README.md',
+        'license' => 'MIT',
+        'form' => [
+            'validation' => 'loose',
+            'fields' => [
+                'dropdown.enabled' => [
+                    'type' => 'toggle',
+                    'label' => 'Dropdown in Menu',
+                    'highlight' => 1,
+                    'default' => 1,
+                    'options' => [
+                        1 => 'PLUGIN_ADMIN.ENABLED',
+                        0 => 'PLUGIN_ADMIN.DISABLED'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ]
+            ]
+        ]
+    ]
+];

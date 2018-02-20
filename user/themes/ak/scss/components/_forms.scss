@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+$border-color: $default-blue;
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+    font-family: $raleway;
+    font-size: 2rem;
+    color: $default-blue;
+    vertical-align: middle;
+}
+
+/* Labels */
+label {
+    display: block;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    padding: 10px;
+    width: 100%;
+    border: 5px solid $border-color;
+}
+
+[type="radio"],
+[type="checkbox"] {
+    & + label {
+        display: inline-block;
+    }
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+//Default cursor for buttons
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
+form {
+
+    .grid {
+        input + input {
+            border-left: none;
+        }
+    }
+
+    input[name="_subject"],
+    textarea {
+        border-top: none;
+    }
+}
+
+::placeholder {
+    color: $default-blue;
+}
+::-moz-placeholder {
+  opacity: 1;
+}

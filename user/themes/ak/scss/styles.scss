@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*
+Comment everything not useful for the current project
+*/
+
+/* --- Base --- */
+@import "base/variables";
+@import "base/basics";
+@import "base/fonts";
+
+/* --- Layout --- */
+@import "layout/container";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
+/* --- Components --- */
+@import "components/nav";
+@import "components/headings";
+@import "components/lists";
+@import "components/forms";
+@import "components/buttons";
+@import "components/links";
+
+/* --- Pages --- */
+@import "pages/home";
+@import "pages/agenda";
+@import "pages/atelier";
+@import "pages/contact";
+@import "pages/infos";
+@import "pages/atelier-item";
+@import "pages/details";
+@import "pages/autrement";
+
+/* --- Vendors --- */
+@import "vendors/slick";
+@import "vendors/slick-theme";

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.atelier-item {
+  padding-bottom: 4rem;
+  text-align: center;
+
+  .wrapper {
+    width: 73.4rem;
+  }
+
+  img {
+    width: 100%;
+    margin-top: -2px;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    width: 43.5rem;
+    line-height: 3.4rem;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  ul {
+    margin-top: 3rem;
+  }
+
+  table {
+    width: 43.5rem;
+    margin: 0 auto 3.5rem;
+    font-family: $raleway;
+    font-weight: 500;
+    border-collapse: collapse;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    &:first-child {
+      td:nth-child(2) {
+        font-weight: 700;
+      }
+    }
+  }
+  td {
+    width: 50%;
+    line-height: 4rem;
+    border: 5px solid $default-blue;
+  }
+
+  @media screen and (max-width: 73.4rem) {
+    .wrapper {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 445px) {
+    h2,
+    table {
+      width: 100%;
+      padding: 0;
+    }
+    tr {
+      &:first-child {
+        td {
+
+          &:first-child {
+            border-bottom: none;
+          }
+          &:nth-child(2) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    td {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      &:nth-child(2) {
+        border-top: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: $desktop-width;
+}
+
+@media (max-width: $desktop-width) {
+  .wrapper {
+    padding: 0 2rem;
+    width: 100%;
+  }
+}

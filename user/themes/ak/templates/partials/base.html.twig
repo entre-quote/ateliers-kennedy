@@ -1,0 +1,90 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+    {% do assets.addCss('http://yui.yahooapis.com/pure/0.6.0/pure-min.css', 100) %}
+    {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', 99) %}
+    {# do assets.addCss('theme://css/custom.css', 96) #}
+    {% do assets.addCss('theme://css-compiled/styles.css', 95) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+
+    {% block header %}
+    <header class="header">
+        <div class="">
+
+            <a href="{{ base_url == '' ? '/' : base_url }}" class="logo-wrapper">
+                <h1 class="logo">
+                    Ateliers Kennedy
+                </h1>
+                <span class="logo">ESAT</span>
+            </a>
+            {% block header_navigation %}
+            <nav class="main-nav">
+                <a href="" class="mobile-menu"><span class="bar"></span></a>
+
+                {% include 'partials/navigation.html.twig' %}
+            </nav>
+            {% endblock %}
+        </div>
+    </header>
+    {% endblock %}
+
+    {% block body %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    {% endblock %}
+
+    {% block footer %}
+    <footer>
+        <div class="wrapper grid-3-small-2">
+            <div>
+                <h1 class="logo">Ateliers Kennedy</h1>
+            </div>
+            <div>
+                <address>
+                    <span>285 Rue du Mas de Prunet</span>
+                34070 Montpellier
+                </address>
+            </div>
+            <div>
+                <span>04 67 42 62 78</span>
+                <a href="mailto:accueil@ak-adpep34.fr">accueil@ak-adpep34.fr</a>
+            </div>
+        </div>
+        <a href="#top" class="scroll-to-top"><img src="{{ url('theme://images/scroll.svg') }}" alt=""></a>
+    </footer>
+    {% endblock %}
+
+    {% block bottom %}
+
+    {% block javascripts %}
+    {% do assets.addJs('jquery', 100) %}
+    {% endblock %}
+    {{ assets.js() }}
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <script type="text/javascript" src="{{ url('theme://js/init.js') }}"></script>
+    {{ assets.js('bottom') }}
+
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+{% set first_image = page.media.images|first %}
+
+<article class=details>
+    <div class=wrapper>
+        <div class=center><h2>{{ page.title }}</h2></div>
+
+        {% set content = page.content|slice(page.summary|length) %}
+        <div class=details-content>{{ content }}</div>
+    </div>
+</article>
+{% endblock %}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.agenda-content {
+    div {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: block;
+                max-width: 31rem;
+                height: 2px;
+                margin: auto;
+                background: url(../images/dot-white.svg) 0 0 repeat-x;
+                background-size: auto 2px;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        line-height: 1;
+    }
+
+    a {
+        display: table;
+        margin: 0 auto;
+
+        &:first-child {
+            margin-top: 2.5rem;
+        }
+    }
+}

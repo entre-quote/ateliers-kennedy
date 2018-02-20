@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 5.7 2" style="enable-background:new 0 0 5.7 2;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#XMLID_26_);fill:none;stroke:#213A8F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,6.011;}
+	.st1{clip-path:url(#XMLID_26_);fill:none;stroke:#213A8F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	
+		.st2{clip-path:url(#XMLID_27_);fill:none;stroke:#213A8F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,6.011;}
+	.st3{clip-path:url(#XMLID_27_);fill:none;stroke:#213A8F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:none;}
+</style>
+<g>
+	<defs>
+		<rect id="XMLID_1_" x="1.1" width="5.7" height="2"/>
+	</defs>
+	<clipPath id="XMLID_26_">
+		<use xlink:href="#XMLID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<line id="XMLID_4_" class="st0" x1="1.1" y1="1" x2="6.7" y2="1"/>
+	<path class="st1" d="M6.7,1L6.7,1 M1.1,1L1.1,1"/>
+</g>
+<g id="XMLID_6_">
+	<defs>
+		<rect id="XMLID_5_" x="-4.6" width="5.7" height="2"/>
+	</defs>
+	<clipPath id="XMLID_27_">
+		<use xlink:href="#XMLID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<line id="XMLID_10_" class="st2" x1="-4.6" y1="1" x2="1" y2="1"/>
+	<path id="XMLID_8_" class="st3" d="M1.1,1L1.1,1 M-4.6,1L-4.6,1"/>
+</g>
+<rect id="XMLID_11_" class="st4" width="5.7" height="2"/>
+</svg>

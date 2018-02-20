@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* --- * --- */
+* {
+  box-sizing: border-box;
+  outline-color: $light-blue;
+}
+
+/* --- Body --- */
+body {
+  margin: 0;
+  color: $default-blue;
+  background-color: #fff;
+}
+
+main {
+    margin-top: 17.7rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.center {
+    text-align: center;
+}
+
+.blue {
+    color: #fff;
+    background-color: $default-blue;
+}
+
+.light-blue {
+    background-color: $light-blue;
+}

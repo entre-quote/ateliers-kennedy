@@ -1,0 +1,22 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+    <div class="atelier-slider">
+
+        {% set carrousel = page.collection %}
+        {% for p in carrousel %}
+        {{ p.content }}
+        {% endfor %}
+
+    </div>
+
+    <article class=" atelier-item">
+        <div class=wrapper>
+        
+
+        {% set content = page.content|slice(page.summary|length) %}
+        {{ content }}
+        </div>
+    </article>
+{% endblock %}

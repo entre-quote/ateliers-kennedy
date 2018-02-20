@@ -1,0 +1,30 @@
+---
+title: 'Expositions ARTDIT'
+---
+
+### 2015 - 2017
+
+## Expositions ARTDIT
+
+Chaque année, depuis 2015, la SAESAT participe à l’exposition, ArtDit. <br>
+Des animateurs d’ateliers d’arts plastiques d’établissements du secteur médicosocial, organisent chaque année, des expositions d’Arts Plastiques permettant aux artistes du secteur médico-social d’exprimer leur potentiel artistique. Le collectif ARTDIT est né en 2007.
+
+<div class="grid-3">
+    <div>
+        2015<br>
+        "Recycl’Art"<br>
+        L'Espace des Pénitents<br>
+        Clermont l'Hérault
+    </div>
+    <div>
+        2016<br>
+        "L’arbre dans tous ses états"<br>
+        Château de Restinclières<br>
+        Prades-Le-Lez
+    </div>
+    <div>
+        2017<br>
+        "Entre Terre et Mer au fil de Thau" Château Girard<br>
+        Mèze
+    </div>
+</div>

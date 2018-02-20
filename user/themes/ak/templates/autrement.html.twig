@@ -1,0 +1,13 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<article class=autrement>
+    <div class=wrapper>
+        <div class=center><h2>{{ page.title }}</h2></div>
+
+        {% set content = page.content|slice(page.summary|length) %}
+        <div class=details-content>{{ content }}</div>
+    </div>
+</article>
+{% endblock %}
