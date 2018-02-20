@@ -9,7 +9,7 @@
             this.initSmoothScroll();
             this.initBackToHome();
             this.initMobileMenu();
-            // this.initCloseMobileMenu();
+            this.initCloseMobileMenu();
         },
 
         initHomeSlider: function(){
@@ -51,7 +51,7 @@
         },
 
         initSmoothScroll: function(){
-
+            //
             $('.home-nav a, .scroll-to-top, .slick-slide a').on('click', function (e) {
                 e.preventDefault();
                 $('header').addClass('is-sticky');
@@ -64,29 +64,39 @@
         },
 
         initBackToHome: function() {
-            if ($(location.hash).length) {
-                $("html, body").animate({
-                    scrollTop: $(location.hash).offset().top - ($('.header').outerHeight() - 1)
-                }, 750);
-            }
+
+            hash = window.location.hash;
+            $(window).bind("load", function() {
+
+                if ( $(hash).length ) {
+                    speed = 750,
+                    newPos = $(location.hash).offset().top - ($('.header').outerHeight() - 1);
+
+                    $('html, body').animate({scrollTop: newPos}, speed);
+                }
+            });
         },
 
         initMobileMenu: function(){
             //
-            $('.mobile-menu').on('click', function (e) {
+            $('.mobile-menu').on('click', function(e) {
                 e.preventDefault();
                 $('.main-nav').toggleClass('is-open');
             });
         },
 
-        // initCloseMobileMenu: function(){
-        //     //
-        //     $('header .main-nav.is-open .grid a').on('click', function (e) {
-        //         e.preventDefault();
-        //         $('.main-nav').removeClass('is-open');
-        //     });
-        //
-        // }
+        initCloseMobileMenu: function(){
+            //
+            if($('.main-nav').hasClass('is-open')) {
+                console.log("open");
+            }
+            $('.main-nav.is-open a').on('click', function(e) {
+                e.preventDefault();
+                console.log("lop");
+                $('.main-nav').removeClass('is-open');
+            });
+
+        }
 
     };
 
