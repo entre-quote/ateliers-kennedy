@@ -9,7 +9,6 @@
             this.initSmoothScroll();
             this.initBackToHome();
             this.initMobileMenu();
-            this.initCloseMobileMenu();
         },
 
         initHomeSlider: function(){
@@ -64,7 +63,7 @@
         },
 
         initBackToHome: function() {
-
+            //
             hash = window.location.hash;
             $(window).bind("load", function() {
 
@@ -82,20 +81,16 @@
             $('.mobile-menu').on('click', function(e) {
                 e.preventDefault();
                 $('.main-nav').toggleClass('is-open');
-            });
-        },
 
-        initCloseMobileMenu: function(){
-            //
-            if($('.main-nav').hasClass('is-open')) {
-                console.log("open");
-            }
-            $('.main-nav.is-open a').on('click', function(e) {
-                e.preventDefault();
-                console.log("lop");
-                $('.main-nav').removeClass('is-open');
-            });
+                $('.main-nav.is-open .home-nav a').on('click', function(e) {
+                    e.preventDefault();
+                    $('.main-nav').removeClass('is-open');
+                });
 
+                $('.main-nav.is-open .page-nav a').on('click', function() {
+                    $('.main-nav').removeClass('is-open');
+                });
+            });
         }
 
     };

@@ -157,7 +157,7 @@ class __TwigTemplate_b1a18e7eda5a4964ae4eb5632c75de02cc45283a6660e7652eee5791b51
     {
         // line 39
         echo "            <nav class=\"main-nav\">
-                <a href=\"\" class=\"mobile-menu\"><span class=\"bar\"></span></a>
+                <a href=\"#\" class=\"mobile-menu\"><span class=\"bar\"></span></a>
 
                 ";
         // line 42
@@ -313,7 +313,7 @@ class __TwigTemplate_b1a18e7eda5a4964ae4eb5632c75de02cc45283a6660e7652eee5791b51
             </a>
             {% block header_navigation %}
             <nav class=\"main-nav\">
-                <a href=\"\" class=\"mobile-menu\"><span class=\"bar\"></span></a>
+                <a href=\"#\" class=\"mobile-menu\"><span class=\"bar\"></span></a>
 
                 {% include 'partials/navigation.html.twig' %}
             </nav>
@@ -364,6 +364,6 @@ class __TwigTemplate_b1a18e7eda5a4964ae4eb5632c75de02cc45283a6660e7652eee5791b51
 
 </body>
 </html>
-", "partials/base.html.twig", "/Users/dev/Downloads/grav-admin/user/themes/ak/templates/partials/base.html.twig");
+", "partials/base.html.twig", "/Users/dev/Boulot/Context/Ateliers Kennedy/ateliers-kennedy/user/themes/ak/templates/partials/base.html.twig");
     }
 }
