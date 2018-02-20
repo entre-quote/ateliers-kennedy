@@ -64,15 +64,11 @@
         },
 
         initBackToHome: function() {
-            $('.page-nav a').on('click', function() {
-                // e.preventDefault();
-                $('header').addClass('is-sticky');
-                var page  = $(this).attr('href'), // cible
-                speed = 750, // Durée (en ms)
-                newPos = $(page).offset().top - ($('.header').outerHeight() - 1);
-                $('html, body').animate({scrollTop: newPos}, speed); // Go
-                return false;
-            });
+            if ($(location.hash).length) {
+                $("html, body").animate({
+                    scrollTop: $(location.hash).offset().top - ($('.header').outerHeight() - 1)
+                }, 750);
+            }
         },
 
         initMobileMenu: function(){

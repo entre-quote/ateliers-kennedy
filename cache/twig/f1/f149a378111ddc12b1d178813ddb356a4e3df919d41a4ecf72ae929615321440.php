@@ -37,16 +37,16 @@ class __TwigTemplate_e2bdc00677b10ffc59c03d3bc3c426445630dce3fe0678ec8410ed8def0
             // line 17
             echo "    <div class=\"grid page-nav\">
         <div>
-            <div><a href=\"/\">Présentation</a></div>
-            <div><a href=\"/home/\">Médico-social</a></div>
-            <div><a href=\"/home/\">Ateliers</a></div>
-            <div><a href=\"/home/\">Actions commerciales</a></div>
+            <div><a href=\"/#presentation\">Présentation</a></div>
+            <div><a href=\"/#medico\">Médico-social</a></div>
+            <div><a href=\"/#ateliers\">Ateliers</a></div>
+            <div><a href=\"/#actionco\">Actions commerciales</a></div>
         </div>
         <div>
             <div><a href=\"/#saesat\">SAESAT</a></div>
-            <div><a href=\"/home/#autrement\">Autrement</a></div>
-            <div><a href=\"/home/#partenaires\">Partenaires</a></div>
-            <div><a href=\"/home/#contact\">Contact - Infos</a></div>
+            <div><a href=\"/#autrement\">Autrement</a></div>
+            <div><a href=\"/#partenaires\">Partenaires</a></div>
+            <div><a href=\"/#contact\">Contact - Infos</a></div>
         </div>
     </div>
 ";
@@ -96,16 +96,16 @@ class __TwigTemplate_e2bdc00677b10ffc59c03d3bc3c426445630dce3fe0678ec8410ed8def0
 {% else %}
     <div class=\"grid page-nav\">
         <div>
-            <div><a href=\"/\">Présentation</a></div>
-            <div><a href=\"/home/\">Médico-social</a></div>
-            <div><a href=\"/home/\">Ateliers</a></div>
-            <div><a href=\"/home/\">Actions commerciales</a></div>
+            <div><a href=\"/#presentation\">Présentation</a></div>
+            <div><a href=\"/#medico\">Médico-social</a></div>
+            <div><a href=\"/#ateliers\">Ateliers</a></div>
+            <div><a href=\"/#actionco\">Actions commerciales</a></div>
         </div>
         <div>
             <div><a href=\"/#saesat\">SAESAT</a></div>
-            <div><a href=\"/home/#autrement\">Autrement</a></div>
-            <div><a href=\"/home/#partenaires\">Partenaires</a></div>
-            <div><a href=\"/home/#contact\">Contact - Infos</a></div>
+            <div><a href=\"/#autrement\">Autrement</a></div>
+            <div><a href=\"/#partenaires\">Partenaires</a></div>
+            <div><a href=\"/#contact\">Contact - Infos</a></div>
         </div>
     </div>
 {% endif %}
