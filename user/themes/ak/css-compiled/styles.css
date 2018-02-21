@@ -1031,7 +1031,7 @@ a {
     font-weight: 700; }
   .atelier-item td {
     width: 50%;
-    padding: 5px;
+    padding: 5px 10px;
     line-height: 4rem;
     border: 5px solid #2800aa; }
   @media screen and (max-width: 73.4rem) {
